@@ -1,0 +1,68 @@
+/*测试*/
+#top_main,nav,#banner,section,footer{
+	border:1px solid #000;
+}
+/*设置页面通用样式*/
+body{
+	font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+	color:#666;
+	margin:0px;
+	padding:0px;
+}
+ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+input{
+	border:none;
+}
+img{
+	vertical-align:bottom;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#FF0700;
+	text-decoration:underline;
+}
+/*页面整体布局*/
+#top_box,#top_main,#nav,#banner,#main,#foot_box,#footer{
+	width:1211px;
+	margin:0 auto;/*左右居中*/
+}
+#top{
+	/*宽：100%，高度：30px ,背景颜色,下边框，行高：30px*/
+	width:100%;
+	height:30px;
+	background-color:#f7f7f7;
+	border:1px solid #eee;
+	line-height:30px;
+}
+
+/*页面顶部 : 收藏京东*/
+#top_box>img{
+	float:left;
+	margin-top:9px;
+	margin-right:5px;
+}
+/*顶部右侧的链接菜单*/
+#top_box ul>li{
+	/*浮动，margin-right*/
+	float:left;
+	margin-right:5px;
+}
+#top_box ul>li b{
+	border-left:1px solid #ddd;
+	padding-right:5px;
+}
+/*会员俱乐部*/
+li.vip a{
+	padding-left:29px;
+	background:url(Images/vip.jpg) no-repeat left center;
+}

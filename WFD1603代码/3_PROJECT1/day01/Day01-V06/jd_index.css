@@ -1,0 +1,221 @@
+/*测试*/
+nav,#banner,section{
+	border:1px solid #000;
+}
+/*设置页面通用样式*/
+body{
+	font:12px "microsoft yahei",Arial,Helvetica,sans-serif;
+	color:#666;
+	margin:0px;
+	padding:0px;
+}
+ul,ol,li,p,h1,h2,h3,h4,h5,h6,dl,dt,dd{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+input{
+	border:none;
+}
+img{
+	vertical-align:bottom;
+}
+.lf{float:left;}
+.rt{float:right;}
+.clear{clear:both;}
+a{
+	color:#666;
+	text-decoration:none;
+}
+a:hover{
+	color:#FF0700;
+	text-decoration:underline;
+}
+/*页面整体布局*/
+#top_box,#top_main,#nav,#banner,#main,#foot_box,#footer{
+	width:1211px;
+	margin:0 auto;/*左右居中*/
+}
+#top{
+	/*宽：100%，高度：30px ,背景颜色,下边框，行高：30px*/
+	width:100%;
+	height:30px;
+	background-color:#f7f7f7;
+	border:1px solid #eee;
+	line-height:30px;
+}
+
+/*页面顶部 : 收藏京东*/
+#top_box>img{
+	float:left;
+	margin-top:9px;
+	margin-right:5px;
+}
+/*顶部右侧的链接菜单*/
+#top_box>ul>li{
+	/*浮动，margin-right*/
+	float:left;
+	margin-right:5px;
+}
+#top_box ul>li b{
+	border-left:1px solid #ddd;
+	padding-right:5px;
+}
+/*会员俱乐部*/
+li.vip a{
+	padding-left:29px;
+	background:url(Images/vip.jpg) no-repeat left center;
+}
+/*大客户*/
+li.dakehu a{
+	padding-left:26px;
+	background:url(Images/dakehu.jpg) no-repeat left center;
+}
+/*手机京东 */
+li.app_jd a{
+	/*背景图像 13*22*/
+	padding-left:18px;
+	display:inline-block;
+	height:22px;
+	line-height:22px;
+	background:url(Images/iconlist_2.png) no-repeat -128px -360px;
+}
+li.app_jd a:hover{
+	background-position:-128px -399px;
+}
+/*客户服务*/
+li.service>a{
+	/*显示方式 宽度 和 高度*/
+	display:inline-block;
+	width:72px;
+	height:26px;
+	/*居中对齐，增加透明边框*/
+	text-align:center;
+	border:1px solid transparent;
+	border-bottom:none;
+
+	/*设置背景图 为 jt_down.jpg*/
+	background:url(Images/jt_down.jpg) no-repeat 62px center;
+}
+li.service>a:hover{
+	
+	border-color:#ddd;
+	/*background-image:url(Images/jt_up.jpg);*/
+	background:#fff url(Images/jt_up.jpg) no-repeat 62px center;
+}
+/*客户服务弹出菜单*/
+#service_items{
+	/*宽度、左右下边框、背景颜色*/
+	width:72px;
+	border:1px solid #ddd;
+	border-top:none;
+	background-color:#fff;
+	/*文本居中对齐*/
+	text-align:center;
+	/*绝对定位 */
+	position:absolute;
+	top:27px;
+	left:6px;
+}
+li.service{
+	/*相对定位：配合#service_items的绝对定位*/
+	position:relative;
+}
+
+/*购物指南、配送方式等*/
+#foot_box{
+	/*上边框、上外边距、上内边距*/
+	border-top:1px solid #ddd;
+	margin-top:10px;
+	margin-bottom:15px;
+	padding-top:5px;
+	/*撑起 父元素的高度*/
+	overflow:hidden;
+}
+#foot_box p{
+	float:left;
+	width:40px;
+	height:40px;
+	margin:10px 10px 0px 50px;
+	background:url(Images/iconlist_2.png) no-repeat;
+}
+#foot_box ul{
+	float:left;
+	width:142px;
+}
+#foot_box ul li b{
+	line-height:30px;
+}
+#foot_box ul li a{
+	line-height:22px;
+}
+#foot_box p.shopping_guide{
+	background-position:0px -56px;
+}
+#foot_box p.send_type{
+	background-position:-50px -56px;
+}
+/*页面底部 版权信息*/
+#footer{
+	border-top:1px solid #ddd;
+	padding-top:10px;
+	text-align:center;
+}
+#footer .links a{
+	margin:0 10px;
+}
+#footer .copyright{
+	margin-top:15px;
+	line-height:20px;
+}
+#footer .imgs{
+	margin-top:20px;
+}
+#footer .imgs a{
+	margin:0 15px;
+}
+/**LOGO 和 搜索框 */
+#top_main{
+	padding:15px 0px;
+}
+/*搜索框*/
+#search_box{
+	width:510px;
+	padding-left:40px;
+	padding-right:80px;
+}
+div.search{
+	width:510px;
+	height:30px;
+	background-color:#e4393c;
+	margin-bottom:5px;
+	/*上下左右 各3px 边框*/
+	border:3px solid #e4393c;
+}
+/*搜索框 元素 */
+input.text{
+	width:410px;
+	padding:5px;
+	height:20px;
+	color:#999;
+}
+/*按钮*/
+input.button{
+	width:80px;
+	height:30px;
+	/*文本颜色、背景颜色、加粗*/
+	color:#fff;
+	background-color:#e4393c;
+	font-weight:bold;
+}
+/*热门搜索*/
+div.hot_words{
+	/*宽度 高度 溢出隐藏*/
+	width:100%;
+	height:16px;
+	overflow:hidden;
+}
+div.hot_words a{
+	color:#666;
+	margin-right:5px;
+}
